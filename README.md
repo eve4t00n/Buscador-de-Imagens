@@ -23,6 +23,8 @@ Certifique-se de ter os seguintes componentes instalados em seu sistema:
 - GIT
 - Visual Code Studio (VS Code)
 
+  Se essas ferramentas não estiverem disponíveis você pode optar por acessar ao link: https://eve4t00n.github.io/Buscador-de-Imagens/ e testar no navegador sem precisar clonar esse repositório
+
 ## Instruções
 
 1. No GIT, clone este repositório em sua máquina local:
