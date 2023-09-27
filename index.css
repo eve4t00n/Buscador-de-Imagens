@@ -12,7 +12,21 @@
 }
 
 .imgs{
-    padding: 1rem;
+    padding: 0.5rem;
+    column-count: 3;
+    column-gap: 0;
+}
+
+img{
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: scale 350ms ease, opacity 350ms linear;
+}
+
+.imgs:has(img:hover) img:not(:hover){
+    scale: .9;
+    opacity: .7;
 }
 
 .imgs img{
