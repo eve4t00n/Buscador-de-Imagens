@@ -16,7 +16,6 @@ function manipulaResposta(req){
     let response = JSON.parse(req.responseText);
     let imgs = document.querySelector('.imgs');
     let lim = document.getElementById('limite').value;
-    console.log(response);
     if(lim == ''){
         lim = 1;
     } 
@@ -26,9 +25,13 @@ function manipulaResposta(req){
         imgs.innerHTML = '';
         let limite = lim;
         for(i=0;i<limite;i++){
+            const link = document.createElement('a');
+            link.href = response.photos[i].src.medium;
+            link.target = '_blank';
             const image = document.createElement('img');
             image.src = response.photos[i].src.medium;
-            imgs.appendChild(image);
+            link.appendChild(image);
+            imgs.appendChild(link);
         }
     }
 }
